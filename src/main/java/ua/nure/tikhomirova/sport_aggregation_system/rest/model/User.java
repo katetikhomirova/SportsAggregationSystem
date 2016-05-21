@@ -3,6 +3,7 @@ package ua.nure.tikhomirova.sport_aggregation_system.rest.model;
 import java.io.Serializable;
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 
 /**
@@ -11,6 +12,7 @@ import java.util.Date;
  */
 @Entity
 @Table(name="user")
+@NamedQuery(name="User.findAll", query="SELECT u FROM User u")
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -42,15 +44,27 @@ public class User implements Serializable {
 
 	private int rating;
 
-	//uni-directional many-to-one association to UserRole
+	//bi-directional many-to-one association to Administration
+	@OneToMany(mappedBy="user", fetch=FetchType.EAGER)
+	private List<Administration> administrations;
+
+	//bi-directional many-to-one association to Sportrank
+	@ManyToOne
+	@JoinColumn(name="rank")
+	private Sportrank sportrank;
+
+	//bi-directional many-to-one association to UserRole
 	@ManyToOne
 	@JoinColumn(name="role")
 	private UserRole userrole;
 
-	//uni-directional many-to-one association to Sportrank
-	@ManyToOne
-	@JoinColumn(name="rank")
-	private Sportrank sportrank;
+	//bi-directional many-to-one association to UserTeam
+	@OneToMany(mappedBy="user", fetch=FetchType.EAGER)
+	private List<UserTeam> userTeams;
+
+	//bi-directional many-to-one association to UserSport
+	@OneToMany(mappedBy="user", fetch=FetchType.EAGER)
+	private List<UserSport> usersports;
 
 	public User() {
 	}
@@ -127,12 +141,26 @@ public class User implements Serializable {
 		this.rating = rating;
 	}
 
-	public UserRole getUserrole() {
-		return this.userrole;
+	public List<Administration> getAdministrations() {
+		return this.administrations;
 	}
 
-	public void setUserrole(UserRole userrole) {
-		this.userrole = userrole;
+	public void setAdministrations(List<Administration> administrations) {
+		this.administrations = administrations;
+	}
+
+	public Administration addAdministration(Administration administration) {
+		getAdministrations().add(administration);
+		administration.setUser(this);
+
+		return administration;
+	}
+
+	public Administration removeAdministration(Administration administration) {
+		getAdministrations().remove(administration);
+		administration.setUser(null);
+
+		return administration;
 	}
 
 	public Sportrank getSportrank() {
@@ -141,6 +169,58 @@ public class User implements Serializable {
 
 	public void setSportrank(Sportrank sportrank) {
 		this.sportrank = sportrank;
+	}
+
+	public UserRole getUserrole() {
+		return this.userrole;
+	}
+
+	public void setUserrole(UserRole userrole) {
+		this.userrole = userrole;
+	}
+
+	public List<UserTeam> getUserTeams() {
+		return this.userTeams;
+	}
+
+	public void setUserTeams(List<UserTeam> userTeams) {
+		this.userTeams = userTeams;
+	}
+
+	public UserTeam addUserTeam(UserTeam userTeam) {
+		getUserTeams().add(userTeam);
+		userTeam.setUser(this);
+
+		return userTeam;
+	}
+
+	public UserTeam removeUserTeam(UserTeam userTeam) {
+		getUserTeams().remove(userTeam);
+		userTeam.setUser(null);
+
+		return userTeam;
+	}
+
+	public List<UserSport> getUsersports() {
+		return this.usersports;
+	}
+
+	public void setUsersports(List<UserSport> usersports) {
+		this.usersports = usersports;
+	}
+
+	public UserSport addUsersport(UserSport usersport) {
+		getUsersports().add(usersport);
+		usersport.setUser(this);
+
+		return usersport;
+	}
+
+	public UserSport removeUsersport(UserSport usersport) {
+		getUsersports().remove(usersport);
+		usersport.setUser(null);
+
+		return usersport;
 	}
 
 }

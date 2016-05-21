@@ -2,6 +2,7 @@ package ua.nure.tikhomirova.sport_aggregation_system.rest.model;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import java.util.List;
 
 
 /**
@@ -22,6 +23,14 @@ public class Unit implements Serializable {
 	@Column(length=45)
 	private String unitName;
 
+	//bi-directional many-to-one association to Result
+	@OneToMany(mappedBy="unitBean", fetch=FetchType.EAGER)
+	private List<Result> results;
+
+	//bi-directional many-to-one association to Standart
+	@OneToMany(mappedBy="unit", fetch=FetchType.EAGER)
+	private List<Standart> standarts;
+
 	public Unit() {
 	}
 
@@ -39,6 +48,50 @@ public class Unit implements Serializable {
 
 	public void setUnitName(String unitName) {
 		this.unitName = unitName;
+	}
+
+	public List<Result> getResults() {
+		return this.results;
+	}
+
+	public void setResults(List<Result> results) {
+		this.results = results;
+	}
+
+	public Result addResult(Result result) {
+		getResults().add(result);
+		result.setUnitBean(this);
+
+		return result;
+	}
+
+	public Result removeResult(Result result) {
+		getResults().remove(result);
+		result.setUnitBean(null);
+
+		return result;
+	}
+
+	public List<Standart> getStandarts() {
+		return this.standarts;
+	}
+
+	public void setStandarts(List<Standart> standarts) {
+		this.standarts = standarts;
+	}
+
+	public Standart addStandart(Standart standart) {
+		getStandarts().add(standart);
+		standart.setUnit(this);
+
+		return standart;
+	}
+
+	public Standart removeStandart(Standart standart) {
+		getStandarts().remove(standart);
+		standart.setUnit(null);
+
+		return standart;
 	}
 
 }

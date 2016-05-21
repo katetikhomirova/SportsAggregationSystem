@@ -22,7 +22,7 @@ import org.springframework.transaction.annotation.Transactional;
 import ua.nure.tikhomirova.sport_aggregation_system.rest.dao.CountryDao;
 import ua.nure.tikhomirova.sport_aggregation_system.rest.model.Country;
 
-@Path("/countrys")
+@Path("/countries")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 @Transactional

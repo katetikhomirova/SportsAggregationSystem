@@ -3,6 +3,7 @@ package ua.nure.tikhomirova.sport_aggregation_system.rest.model;
 import java.io.Serializable;
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 
 /**
@@ -31,15 +32,19 @@ public class Competition implements Serializable {
 	@Column(nullable=false)
 	private Date startDate;
 
-	//uni-directional many-to-one association to Status
+	//bi-directional many-to-one association to Place
+	@ManyToOne
+	@JoinColumn(name="placeId")
+	private Place place;
+
+	//bi-directional many-to-one association to Status
 	@ManyToOne
 	@JoinColumn(name="statusId")
 	private Status status;
 
-	//uni-directional many-to-one association to Place
-	@ManyToOne
-	@JoinColumn(name="placeId")
-	private Place place;
+	//bi-directional many-to-one association to SportCompetition
+	@OneToMany(mappedBy="competition", fetch=FetchType.EAGER)
+	private List<SportCompetition> sportcompetitions;
 
 	public Competition() {
 	}
@@ -76,6 +81,14 @@ public class Competition implements Serializable {
 		this.startDate = startDate;
 	}
 
+	public Place getPlace() {
+		return this.place;
+	}
+
+	public void setPlace(Place place) {
+		this.place = place;
+	}
+
 	public Status getStatus() {
 		return this.status;
 	}
@@ -84,12 +97,26 @@ public class Competition implements Serializable {
 		this.status = status;
 	}
 
-	public Place getPlace() {
-		return this.place;
+	public List<SportCompetition> getSportcompetitions() {
+		return this.sportcompetitions;
 	}
 
-	public void setPlace(Place place) {
-		this.place = place;
+	public void setSportcompetitions(List<SportCompetition> sportcompetitions) {
+		this.sportcompetitions = sportcompetitions;
+	}
+
+	public SportCompetition addSportcompetition(SportCompetition sportcompetition) {
+		getSportcompetitions().add(sportcompetition);
+		sportcompetition.setCompetition(this);
+
+		return sportcompetition;
+	}
+
+	public SportCompetition removeSportcompetition(SportCompetition sportcompetition) {
+		getSportcompetitions().remove(sportcompetition);
+		sportcompetition.setCompetition(null);
+
+		return sportcompetition;
 	}
 
 }

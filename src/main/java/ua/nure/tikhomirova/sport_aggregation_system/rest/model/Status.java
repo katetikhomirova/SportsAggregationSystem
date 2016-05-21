@@ -2,6 +2,7 @@ package ua.nure.tikhomirova.sport_aggregation_system.rest.model;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import java.util.List;
 
 
 /**
@@ -22,6 +23,10 @@ public class Status implements Serializable {
 	@Column(nullable=false, length=50)
 	private String name;
 
+	//bi-directional many-to-one association to Competition
+	@OneToMany(mappedBy="status", fetch=FetchType.EAGER)
+	private List<Competition> competitions;
+
 	public Status() {
 	}
 
@@ -39,6 +44,28 @@ public class Status implements Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public List<Competition> getCompetitions() {
+		return this.competitions;
+	}
+
+	public void setCompetitions(List<Competition> competitions) {
+		this.competitions = competitions;
+	}
+
+	public Competition addCompetition(Competition competition) {
+		getCompetitions().add(competition);
+		competition.setStatus(this);
+
+		return competition;
+	}
+
+	public Competition removeCompetition(Competition competition) {
+		getCompetitions().remove(competition);
+		competition.setStatus(null);
+
+		return competition;
 	}
 
 }

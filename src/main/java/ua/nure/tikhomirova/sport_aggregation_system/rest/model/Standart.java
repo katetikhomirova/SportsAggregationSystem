@@ -32,17 +32,17 @@ public class Standart implements Serializable {
 
 	private int value;
 
-	//uni-directional many-to-one association to Sportrank
-	@ManyToOne
-	@JoinColumn(name="sportRank", nullable=false)
-	private Sportrank sportrank;
-
-	//uni-directional many-to-one association to Sport
+	//bi-directional many-to-one association to Sport
 	@ManyToOne
 	@JoinColumn(name="sportId", nullable=false)
 	private Sport sport;
 
-	//uni-directional many-to-one association to Unit
+	//bi-directional many-to-one association to Sportrank
+	@ManyToOne
+	@JoinColumn(name="sportRank", nullable=false)
+	private Sportrank sportrank;
+
+	//bi-directional many-to-one association to Unit
 	@ManyToOne
 	@JoinColumn(name="units")
 	private Unit unit;
@@ -106,20 +106,20 @@ public class Standart implements Serializable {
 		this.value = value;
 	}
 
-	public Sportrank getSportrank() {
-		return this.sportrank;
-	}
-
-	public void setSportrank(Sportrank sportrank) {
-		this.sportrank = sportrank;
-	}
-
 	public Sport getSport() {
 		return this.sport;
 	}
 
 	public void setSport(Sport sport) {
 		this.sport = sport;
+	}
+
+	public Sportrank getSportrank() {
+		return this.sportrank;
+	}
+
+	public void setSportrank(Sportrank sportrank) {
+		this.sportrank = sportrank;
 	}
 
 	public Unit getUnit() {

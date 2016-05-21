@@ -2,6 +2,7 @@ package ua.nure.tikhomirova.sport_aggregation_system.rest.model;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import java.util.List;
 
 
 /**
@@ -21,15 +22,19 @@ public class Competitor implements Serializable {
 
 	private int position;
 
-	//uni-directional many-to-one association to Team
+	//bi-directional many-to-one association to SportCompetition
+	@ManyToOne
+	@JoinColumn(name="sportCompetition")
+	private SportCompetition sportcompetition;
+
+	//bi-directional many-to-one association to Team
 	@ManyToOne
 	@JoinColumn(name="teamId")
 	private Team team;
 
-	//uni-directional many-to-one association to SportCompetition
-	@ManyToOne
-	@JoinColumn(name="sportCompetition")
-	private SportCompetition sportcompetition;
+	//bi-directional many-to-one association to Result
+	@OneToMany(mappedBy="competitorBean", fetch=FetchType.EAGER)
+	private List<Result> results;
 
 	public Competitor() {
 	}
@@ -50,6 +55,14 @@ public class Competitor implements Serializable {
 		this.position = position;
 	}
 
+	public SportCompetition getSportcompetition() {
+		return this.sportcompetition;
+	}
+
+	public void setSportcompetition(SportCompetition sportcompetition) {
+		this.sportcompetition = sportcompetition;
+	}
+
 	public Team getTeam() {
 		return this.team;
 	}
@@ -58,12 +71,26 @@ public class Competitor implements Serializable {
 		this.team = team;
 	}
 
-	public SportCompetition getSportcompetition() {
-		return this.sportcompetition;
+	public List<Result> getResults() {
+		return this.results;
 	}
 
-	public void setSportcompetition(SportCompetition sportcompetition) {
-		this.sportcompetition = sportcompetition;
+	public void setResults(List<Result> results) {
+		this.results = results;
+	}
+
+	public Result addResult(Result result) {
+		getResults().add(result);
+		result.setCompetitorBean(this);
+
+		return result;
+	}
+
+	public Result removeResult(Result result) {
+		getResults().remove(result);
+		result.setCompetitorBean(null);
+
+		return result;
 	}
 
 }

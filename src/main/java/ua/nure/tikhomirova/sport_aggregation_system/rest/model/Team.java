@@ -2,6 +2,7 @@ package ua.nure.tikhomirova.sport_aggregation_system.rest.model;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import java.util.List;
 
 
 /**
@@ -22,10 +23,18 @@ public class Team implements Serializable {
 	@Column(length=50)
 	private String name;
 
-	//uni-directional many-to-one association to UserSport
+	//bi-directional many-to-one association to Competitor
+	@OneToMany(mappedBy="team", fetch=FetchType.EAGER)
+	private List<Competitor> competitors;
+
+	//bi-directional many-to-one association to UserSport
 	@ManyToOne
 	@JoinColumn(name="userSport")
 	private UserSport usersport;
+
+	//bi-directional many-to-one association to UserTeam
+	@OneToMany(mappedBy="team", fetch=FetchType.EAGER)
+	private List<UserTeam> userTeams;
 
 	public Team() {
 	}
@@ -46,12 +55,56 @@ public class Team implements Serializable {
 		this.name = name;
 	}
 
+	public List<Competitor> getCompetitors() {
+		return this.competitors;
+	}
+
+	public void setCompetitors(List<Competitor> competitors) {
+		this.competitors = competitors;
+	}
+
+	public Competitor addCompetitor(Competitor competitor) {
+		getCompetitors().add(competitor);
+		competitor.setTeam(this);
+
+		return competitor;
+	}
+
+	public Competitor removeCompetitor(Competitor competitor) {
+		getCompetitors().remove(competitor);
+		competitor.setTeam(null);
+
+		return competitor;
+	}
+
 	public UserSport getUsersport() {
 		return this.usersport;
 	}
 
 	public void setUsersport(UserSport usersport) {
 		this.usersport = usersport;
+	}
+
+	public List<UserTeam> getUserTeams() {
+		return this.userTeams;
+	}
+
+	public void setUserTeams(List<UserTeam> userTeams) {
+		this.userTeams = userTeams;
+	}
+
+	public UserTeam addUserTeam(UserTeam userTeam) {
+		getUserTeams().add(userTeam);
+		userTeam.setTeam(this);
+
+		return userTeam;
+	}
+
+	public UserTeam removeUserTeam(UserTeam userTeam) {
+		getUserTeams().remove(userTeam);
+		userTeam.setTeam(null);
+
+		return userTeam;
 	}
 
 }

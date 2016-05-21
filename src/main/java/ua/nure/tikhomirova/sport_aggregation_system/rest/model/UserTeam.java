@@ -19,15 +19,15 @@ public class UserTeam implements Serializable {
 	@Column(unique=true, nullable=false)
 	private int id;
 
-	//uni-directional many-to-one association to User
-	@ManyToOne
-	@JoinColumn(name="userId")
-	private User user;
-
-	//uni-directional many-to-one association to Team
+	//bi-directional many-to-one association to Team
 	@ManyToOne
 	@JoinColumn(name="teamId")
 	private Team team;
+
+	//bi-directional many-to-one association to User
+	@ManyToOne
+	@JoinColumn(name="userId")
+	private User user;
 
 	public UserTeam() {
 	}
@@ -40,20 +40,20 @@ public class UserTeam implements Serializable {
 		this.id = id;
 	}
 
-	public User getUser() {
-		return this.user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
-	}
-
 	public Team getTeam() {
 		return this.team;
 	}
 
 	public void setTeam(Team team) {
 		this.team = team;
+	}
+
+	public User getUser() {
+		return this.user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 }

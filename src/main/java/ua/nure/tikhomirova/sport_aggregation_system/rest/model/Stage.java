@@ -2,6 +2,7 @@ package ua.nure.tikhomirova.sport_aggregation_system.rest.model;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import java.util.List;
 
 
 /**
@@ -19,7 +20,11 @@ public class Stage implements Serializable {
 	@Column(unique=true, nullable=false)
 	private int id;
 
-	//uni-directional many-to-one association to SportCompetition
+	//bi-directional many-to-one association to Result
+	@OneToMany(mappedBy="stageBean", fetch=FetchType.EAGER)
+	private List<Result> results;
+
+	//bi-directional many-to-one association to SportCompetition
 	@ManyToOne
 	@JoinColumn(name="sportCompetition")
 	private SportCompetition sportcompetition;
@@ -33,6 +38,28 @@ public class Stage implements Serializable {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public List<Result> getResults() {
+		return this.results;
+	}
+
+	public void setResults(List<Result> results) {
+		this.results = results;
+	}
+
+	public Result addResult(Result result) {
+		getResults().add(result);
+		result.setStageBean(this);
+
+		return result;
+	}
+
+	public Result removeResult(Result result) {
+		getResults().remove(result);
+		result.setStageBean(null);
+
+		return result;
 	}
 
 	public SportCompetition getSportcompetition() {

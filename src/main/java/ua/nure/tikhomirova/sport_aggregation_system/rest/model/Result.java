@@ -21,20 +21,20 @@ public class Result implements Serializable {
 
 	private int result;
 
-	//uni-directional many-to-one association to Unit
-	@ManyToOne
-	@JoinColumn(name="unit")
-	private Unit unitBean;
-
-	//uni-directional many-to-one association to Competitor
+	//bi-directional many-to-one association to Competitor
 	@ManyToOne
 	@JoinColumn(name="competitor")
 	private Competitor competitorBean;
 
-	//uni-directional many-to-one association to Stage
+	//bi-directional many-to-one association to Stage
 	@ManyToOne
 	@JoinColumn(name="stage")
 	private Stage stageBean;
+
+	//bi-directional many-to-one association to Unit
+	@ManyToOne
+	@JoinColumn(name="unit")
+	private Unit unitBean;
 
 	public Result() {
 	}
@@ -55,14 +55,6 @@ public class Result implements Serializable {
 		this.result = result;
 	}
 
-	public Unit getUnitBean() {
-		return this.unitBean;
-	}
-
-	public void setUnitBean(Unit unitBean) {
-		this.unitBean = unitBean;
-	}
-
 	public Competitor getCompetitorBean() {
 		return this.competitorBean;
 	}
@@ -77,6 +69,14 @@ public class Result implements Serializable {
 
 	public void setStageBean(Stage stageBean) {
 		this.stageBean = stageBean;
+	}
+
+	public Unit getUnitBean() {
+		return this.unitBean;
+	}
+
+	public void setUnitBean(Unit unitBean) {
+		this.unitBean = unitBean;
 	}
 
 }
