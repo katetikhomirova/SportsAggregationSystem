@@ -8,10 +8,7 @@ import org.springframework.boot.context.embedded.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-import org.springframework.web.servlet.view.InternalResourceViewResolver;
-import org.springframework.web.servlet.view.JstlView;
 
 import ua.nure.tikhomirova.sport_aggregation_system.rest.config.JerseyInitialization;
 
@@ -20,15 +17,17 @@ import ua.nure.tikhomirova.sport_aggregation_system.rest.config.JerseyInitializa
 @ComponentScan
 public class Application extends WebMvcConfigurerAdapter {
 
-    public static void main(String[] args) {
-        new SpringApplicationBuilder(Application.class).run(args);
-    }
+	public static void main(String[] args) {
+		new SpringApplicationBuilder(Application.class).run(args);
+	}
 
-    @Bean
-    public ServletRegistrationBean jerseyServlet() {
-        ServletRegistrationBean registration = new ServletRegistrationBean(new ServletContainer(), "/*");
-        registration.addInitParameter(ServletProperties.JAXRS_APPLICATION_CLASS, JerseyInitialization.class.getName());
-        return registration;
-    }
+	@Bean
+	public ServletRegistrationBean jerseyServlet() {
+		ServletRegistrationBean registration = new ServletRegistrationBean(
+				new ServletContainer(), "/*");
+		registration.addInitParameter(ServletProperties.JAXRS_APPLICATION_CLASS,
+				JerseyInitialization.class.getName());
+		return registration;
+	}
 
 }
