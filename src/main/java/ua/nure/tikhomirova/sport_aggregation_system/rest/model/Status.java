@@ -24,7 +24,7 @@ public class Status implements Serializable {
 	private String name;
 
 	//bi-directional many-to-one association to Competition
-	@OneToMany(mappedBy="status", fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="status")
 	private List<Competition> competitions;
 
 	public Status() {

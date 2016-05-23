@@ -21,11 +21,11 @@ public class Stage implements Serializable {
 	private int id;
 
 	//bi-directional many-to-one association to Result
-	@OneToMany(mappedBy="stageBean", fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="stageBean")
 	private List<Result> results;
 
 	//bi-directional many-to-one association to SportCompetition
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="sportCompetition")
 	private SportCompetition sportcompetition;
 

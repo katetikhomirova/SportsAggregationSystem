@@ -20,12 +20,12 @@ public class UserTeam implements Serializable {
 	private int id;
 
 	//bi-directional many-to-one association to Team
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="teamId")
 	private Team team;
 
 	//bi-directional many-to-one association to User
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="userId")
 	private User user;
 

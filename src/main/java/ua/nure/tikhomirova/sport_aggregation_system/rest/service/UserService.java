@@ -1,5 +1,6 @@
 package ua.nure.tikhomirova.sport_aggregation_system.rest.service;
 
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,54 +21,65 @@ import java.util.List;
 @Component
 public class UserService {
 
-    private UserDao userDao;
+	final static Logger log = Logger.getLogger(UserService.class);
 
-    @Inject
-    public UserService(UserDao userDao) {
-        this.userDao = userDao;
-    }
+	private UserDao userDao;
 
-    @GET
-    public List<User> getAll() {
-        return userDao.findAll();
-    }
+	@Inject
+	public UserService(UserDao userDao) {
+		this.userDao = userDao;
+	}
 
-    @GET
-    @Path("{email}")
-    public User getOne(@PathParam("email") String email) {
-        User user = userDao.findOne(email);
-        if (user == null) {
-            throw new WebApplicationException(Response.Status.NOT_FOUND);
-        } else {
-            return user;
-        }
-    }
+	@GET
+	public List<User> getAll() {
+		return userDao.findAll();
+	}
 
-    @POST
-    public User save(@Valid User user) {
-        return userDao.save(user);
-    }
+	@GET
+	@Path("{login}")
+	public User getByLogin(@PathParam("login") String login) {
+		User user = userDao.findByLogin(login);
+		if (user == null) {
+			throw new WebApplicationException(Response.Status.NOT_FOUND);
+		} else {
+			return user;
+		}
+	}
 
-    @PUT
-    @Path("{email}")
-    public User update(@PathParam("email") String email, @Valid User user) {
-        if (userDao.findOne(email) == null) {
-            throw new WebApplicationException(Response.Status.NOT_FOUND);
-        } else {
-            user.setEmail(email);
-            return userDao.save(user);
-        }
-    }
+	@POST
+	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+	@Path("/signin")
+	public boolean signIn(@FormParam("login") String login,
+			@FormParam("password") String password) {
+		User user = userDao.findByLogin(login);
+		return user.getPassword().equals(password);
+	}
 
-    @DELETE
-    @Path("{email}")
-    public void delete(@PathParam("email") String email) {
-        User user = userDao.findOne(email);
-        if (user == null) {
-            throw new WebApplicationException(Response.Status.NOT_FOUND);
-        } else {
-            userDao.delete(user);
-        }
-    }
+	@POST
+	public User save(@Valid User user) {
+		return userDao.save(user);
+	}
+
+	@PUT
+	@Path("{id}")
+	public User update(@PathParam("id") Integer id, @Valid User user) {
+		if (userDao.findOne(id) == null) {
+			throw new WebApplicationException(Response.Status.NOT_FOUND);
+		} else {
+			user.setId(id);
+			return userDao.save(user);
+		}
+	}
+
+	@DELETE
+	@Path("{id}")
+	public void delete(@PathParam("id") Integer id) {
+		User user = userDao.findOne(id);
+		if (user == null) {
+			throw new WebApplicationException(Response.Status.NOT_FOUND);
+		} else {
+			userDao.delete(user);
+		}
+	}
 
 }

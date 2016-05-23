@@ -6,6 +6,7 @@ import javax.inject.Inject;
 import javax.validation.Valid;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -19,6 +20,7 @@ import javax.ws.rs.core.Response;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
+import ua.nure.tikhomirova.sport_aggregation_system.rest.dao.SportCategoryDao;
 import ua.nure.tikhomirova.sport_aggregation_system.rest.dao.SportDao;
 import ua.nure.tikhomirova.sport_aggregation_system.rest.model.Sport;
 
@@ -31,9 +33,12 @@ public class SportService {
 
 	private SportDao sportDao;
 
+	private SportCategoryDao sportCategoryDao;
+
 	@Inject
-	public SportService(SportDao sportDao) {
+	public SportService(SportDao sportDao, SportCategoryDao sportCategoryDao) {
 		this.sportDao = sportDao;
+		this.sportCategoryDao = sportCategoryDao;
 	}
 
 	@GET
@@ -53,14 +58,24 @@ public class SportService {
 	}
 
 	@POST
-	public Sport save(@Valid Sport sport) {
+	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+	public Sport save(@FormParam("name") String name,
+			@FormParam("command") Boolean command,
+			@FormParam("categoryName") Integer categoryId) {
+		Sport sport = new Sport();
+		if (command != null && command) {
+			sport.setIsCommand((byte) 1);
+		} else {
+			sport.setIsCommand((byte) 0);
+		}
+		sport.setName(name);
+		sport.setSportcategory(sportCategoryDao.findOne(categoryId));
 		return sportDao.save(sport);
 	}
 
 	@PUT
 	@Path("{id}")
-	public Sport update(@PathParam("id") Integer id,
-			@Valid Sport sport) {
+	public Sport update(@PathParam("id") Integer id, @Valid Sport sport) {
 		if (sportDao.findOne(id) == null) {
 			throw new WebApplicationException(Response.Status.NOT_FOUND);
 		} else {

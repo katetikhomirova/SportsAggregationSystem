@@ -67,14 +67,14 @@ public class SportCategory implements Serializable {
 
 	public Sport addSport(Sport sport) {
 		getSports().add(sport);
-		//sport.setSportcategory(this);
+		sport.setSportcategory(this);
 
 		return sport;
 	}
 
 	public Sport removeSport(Sport sport) {
 		getSports().remove(sport);
-		//sport.setSportcategory(null);
+		sport.setSportcategory(null);
 
 		return sport;
 	}

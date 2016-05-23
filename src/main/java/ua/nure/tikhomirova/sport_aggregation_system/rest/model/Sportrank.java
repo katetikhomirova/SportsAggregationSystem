@@ -24,11 +24,11 @@ public class Sportrank implements Serializable {
 	private String name;
 
 	//bi-directional many-to-one association to Standart
-	@OneToMany(mappedBy="sportrank", fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="sportrank")
 	private List<Standart> standarts;
 
 	//bi-directional many-to-one association to User
-	@OneToMany(mappedBy="sportrank", fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="sportrank")
 	private List<User> users;
 
 	public Sportrank() {

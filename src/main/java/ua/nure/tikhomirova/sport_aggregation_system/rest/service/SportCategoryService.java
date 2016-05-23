@@ -6,6 +6,7 @@ import javax.inject.Inject;
 import javax.validation.Valid;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -53,7 +54,10 @@ public class SportCategoryService {
 	}
 
 	@POST
-	public SportCategory save(@Valid SportCategory sportCategory) {
+	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+	public SportCategory save(@FormParam("name") String name) {
+		SportCategory sportCategory = new SportCategory();
+		sportCategory.setName(name);
 		return sportCategoryDao.save(sportCategory);
 	}
 

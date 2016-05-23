@@ -2,10 +2,6 @@ package ua.nure.tikhomirova.sport_aggregation_system.rest.model;
 
 import java.io.Serializable;
 import javax.persistence.*;
-
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-
 import java.util.List;
 
 /**
@@ -23,23 +19,22 @@ public class Place implements Serializable {
 	@Column(unique = true, nullable = false)
 	private int id;
 
-	@Column(length = 45)
-	private String name;
+	@Column(length = 500)
+	private String description;
 
 	private double lat;
 
 	private double lng;
 
-	// bi-directional many-to-one association to Competition
-	@OneToMany(mappedBy = "place", fetch = FetchType.EAGER)
-	@JsonManagedReference
-	private List<Competition> competitions;
+	@Column(length = 45)
+	private String name;
 
-	// bi-directional many-to-one association to City
-	@ManyToOne
-	@JoinColumn(name = "cityId")
-	@JsonBackReference
-	private City city;
+	@Column(length = 200)
+	private String address;
+
+	// bi-directional many-to-one association to Competition
+	@OneToMany(mappedBy = "place")
+	private List<Competition> competitions;
 
 	public Place() {
 	}
@@ -52,16 +47,16 @@ public class Place implements Serializable {
 		this.id = id;
 	}
 
-	public String getName() {
-		return this.name;
+	public String getDescription() {
+		return this.description;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}	
+	public void setDescription(String description) {
+		this.description = description;
+	}
 
 	public double getLat() {
-		return lat;
+		return this.lat;
 	}
 
 	public void setLat(double lat) {
@@ -69,11 +64,27 @@ public class Place implements Serializable {
 	}
 
 	public double getLng() {
-		return lng;
+		return this.lng;
 	}
 
 	public void setLng(double lng) {
 		this.lng = lng;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 	public List<Competition> getCompetitions() {
@@ -96,14 +107,6 @@ public class Place implements Serializable {
 		competition.setPlace(null);
 
 		return competition;
-	}
-
-	public City getCity() {
-		return this.city;
-	}
-
-	public void setCity(City city) {
-		this.city = city;
 	}
 
 }

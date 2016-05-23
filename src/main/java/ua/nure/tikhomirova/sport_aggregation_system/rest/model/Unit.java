@@ -24,11 +24,11 @@ public class Unit implements Serializable {
 	private String unitName;
 
 	//bi-directional many-to-one association to Result
-	@OneToMany(mappedBy="unitBean", fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="unitBean")
 	private List<Result> results;
 
 	//bi-directional many-to-one association to Standart
-	@OneToMany(mappedBy="unit", fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="unit")
 	private List<Standart> standarts;
 
 	public Unit() {

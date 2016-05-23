@@ -3,8 +3,6 @@ package ua.nure.tikhomirova.sport_aggregation_system.rest.model;
 import java.io.Serializable;
 import javax.persistence.*;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-
 
 /**
  * The persistent class for the administration database table.
@@ -25,15 +23,13 @@ public class Administration implements Serializable {
 	private byte secretar;
 
 	//bi-directional many-to-one association to SportCompetition
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="sportCompetitionId")
-	@JsonBackReference
 	private SportCompetition sportcompetition;
 
 	//bi-directional many-to-one association to User
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="userId")
-	@JsonBackReference
 	private User user;
 
 	public Administration() {

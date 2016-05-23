@@ -21,25 +21,25 @@ public class SportCompetition implements Serializable {
 	private int id;
 
 	//bi-directional many-to-one association to Administration
-	@OneToMany(mappedBy="sportcompetition", fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="sportcompetition")
 	private List<Administration> administrations;
 
 	//bi-directional many-to-one association to Competitor
-	@OneToMany(mappedBy="sportcompetition", fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="sportcompetition")
 	private List<Competitor> competitors;
 
 	//bi-directional many-to-one association to Competition
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="sportCompetition", nullable=false)
 	private Competition competition;
 
 	//bi-directional many-to-one association to Sport
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="sport", nullable=false)
 	private Sport sportBean;
 
 	//bi-directional many-to-one association to Stage
-	@OneToMany(mappedBy="sportcompetition", fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="sportcompetition")
 	private List<Stage> stages;
 
 	public SportCompetition() {

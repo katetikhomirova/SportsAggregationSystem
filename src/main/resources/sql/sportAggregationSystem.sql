@@ -32,7 +32,7 @@ DEFAULT CHARACTER SET = utf8;
 CREATE  TABLE IF NOT EXISTS `sport_aggregation_system`.`sport` (
   `id` INT(11) NOT NULL AUTO_INCREMENT ,
   `name` VARCHAR(50) NOT NULL ,
-  `isCommand` TINYINT(1) NOT NULL DEFAULT false ,
+  `isCommand` BIT NOT NULL DEFAULT false ,
   `sportCategory` INT(11) NULL ,
   PRIMARY KEY (`id`) ,
   INDEX `sport_category_idx` (`sportCategory` ASC) ,
@@ -117,6 +117,7 @@ CREATE  TABLE IF NOT EXISTS `sport_aggregation_system`.`user` (
   `birthday` DATE NULL DEFAULT NULL ,
   `role` INT(11) NULL DEFAULT NULL ,
   `rank` INT NULL ,
+  `active` BIT NULL ,
   PRIMARY KEY (`id`) ,
   UNIQUE INDEX `login_UNIQUE` (`login` ASC) ,
   UNIQUE INDEX `email_UNIQUE` (`email` ASC) ,
@@ -212,46 +213,16 @@ DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `sport_aggregation_system`.`country`
--- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `sport_aggregation_system`.`country` (
-  `id` INT NOT NULL AUTO_INCREMENT ,
-  `name` VARCHAR(45) NULL ,
-  PRIMARY KEY (`id`) )
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `sport_aggregation_system`.`city`
--- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `sport_aggregation_system`.`city` (
-  `id` INT NOT NULL ,
-  `name` VARCHAR(45) NULL ,
-  `countryId` INT NULL ,
-  PRIMARY KEY (`id`) ,
-  INDEX `country_id_cities_idx` (`countryId` ASC) ,
-  CONSTRAINT `country_id_cities`
-    FOREIGN KEY (`countryId` )
-    REFERENCES `sport_aggregation_system`.`country` (`id` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `sport_aggregation_system`.`place`
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `sport_aggregation_system`.`place` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `name` VARCHAR(45) NULL ,
-  `cityId` INT NULL ,
-  PRIMARY KEY (`id`) ,
-  INDEX `city_id_places_idx` (`cityId` ASC) ,
-  CONSTRAINT `city_id_places`
-    FOREIGN KEY (`cityId` )
-    REFERENCES `sport_aggregation_system`.`city` (`id` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+  `lat` DOUBLE NULL ,
+  `lng` DOUBLE NULL ,
+  `description` VARCHAR(500) NULL ,
+  `address` varchar(200) NULL,
+  PRIMARY KEY (`id`) )
 ENGINE = InnoDB;
 
 
@@ -262,9 +233,11 @@ CREATE  TABLE IF NOT EXISTS `sport_aggregation_system`.`competition` (
   `id` INT(11) NOT NULL AUTO_INCREMENT ,
   `startDate` DATETIME NOT NULL ,
   `endDate` DATETIME NOT NULL ,
-  `open` TINYINT(1) NOT NULL DEFAULT false ,
+  `open` BIT NOT NULL DEFAULT false ,
   `placeId` INT NULL ,
   `statusId` INT(11) NULL ,
+  `title` VARCHAR(100) NULL ,
+  `description` VARCHAR(500) NULL ,
   PRIMARY KEY (`id`) ,
   INDEX `status_id_competition_idx` (`statusId` ASC) ,
   INDEX `place_id_sport_competition_idx` (`placeId` ASC) ,

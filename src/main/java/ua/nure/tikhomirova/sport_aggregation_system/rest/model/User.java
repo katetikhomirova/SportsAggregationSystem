@@ -1,69 +1,86 @@
 package ua.nure.tikhomirova.sport_aggregation_system.rest.model;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 /**
  * The persistent class for the user database table.
  * 
  */
 @Entity
-@Table(name="user")
-@NamedQuery(name="User.findAll", query="SELECT u FROM User u")
+@Table(name = "user")
+@NamedQuery(name = "User.findAll", query = "SELECT u FROM User u")
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(unique=true, nullable=false)
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(unique = true, nullable = false)
 	private int id;
+
+	private byte active;
 
 	@Temporal(TemporalType.DATE)
 	private Date birthday;
 
-	@Column(nullable=false, length=100)
+	@Column(nullable = false, length = 100)
 	private String email;
 
-	@Column(nullable=false, length=50)
+	@Column(nullable = false, length = 50)
 	private String firstName;
 
-	@Column(nullable=false, length=1)
+	@Column(nullable = false, length = 1)
 	private String gender;
 
-	@Column(nullable=false, length=50)
+	@Column(nullable = false, length = 50)
 	private String lastName;
 
-	@Column(nullable=false, length=45)
+	@Column(nullable = false, length = 45)
 	private String login;
 
-	@Column(nullable=false, length=45)
+	@Column(nullable = false, length = 45)
 	private String password;
 
-	private int rating;
+	private Integer rating;
 
-	//bi-directional many-to-one association to Administration
-	@OneToMany(mappedBy="user", fetch=FetchType.EAGER)
+	// bi-directional many-to-one association to Administration
+	@OneToMany(mappedBy = "user")
 	private List<Administration> administrations;
 
-	//bi-directional many-to-one association to Sportrank
-	@ManyToOne
-	@JoinColumn(name="rank")
+	// bi-directional many-to-one association to Sportrank
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "rank")
 	private Sportrank sportrank;
 
-	//bi-directional many-to-one association to UserRole
-	@ManyToOne
-	@JoinColumn(name="role")
+	// bi-directional many-to-one association to UserRole
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "role")
+	@JsonManagedReference
 	private UserRole userrole;
 
-	//bi-directional many-to-one association to UserTeam
-	@OneToMany(mappedBy="user", fetch=FetchType.EAGER)
+	// bi-directional many-to-one association to UserTeam
+	@OneToMany(mappedBy = "user")
 	private List<UserTeam> userTeams;
 
-	//bi-directional many-to-one association to UserSport
-	@OneToMany(mappedBy="user", fetch=FetchType.EAGER)
+	// bi-directional many-to-one association to UserSport
+	@OneToMany(mappedBy = "user")
 	private List<UserSport> usersports;
 
 	public User() {
@@ -75,6 +92,14 @@ public class User implements Serializable {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public byte getActive() {
+		return this.active;
+	}
+
+	public void setActive(byte active) {
+		this.active = active;
 	}
 
 	public Date getBirthday() {
@@ -133,11 +158,11 @@ public class User implements Serializable {
 		this.password = password;
 	}
 
-	public int getRating() {
+	public Integer getRating() {
 		return this.rating;
 	}
 
-	public void setRating(int rating) {
+	public void setRating(Integer rating) {
 		this.rating = rating;
 	}
 

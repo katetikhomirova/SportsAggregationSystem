@@ -2,29 +2,32 @@ package ua.nure.tikhomirova.sport_aggregation_system.rest.model;
 
 import java.io.Serializable;
 import javax.persistence.*;
-import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
+import java.util.List;
 
 /**
  * The persistent class for the userrole database table.
  * 
  */
 @Entity
-@Table(name="userrole")
-@NamedQuery(name="UserRole.findAll", query="SELECT u FROM UserRole u")
+@Table(name = "userrole")
+@NamedQuery(name = "UserRole.findAll", query = "SELECT u FROM UserRole u")
 public class UserRole implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(unique=true, nullable=false)
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(unique = true, nullable = false)
 	private int id;
 
-	@Column(nullable=false, length=45)
+	@Column(nullable = false, length = 45)
 	private String name;
 
-	//bi-directional many-to-one association to User
-	@OneToMany(mappedBy="userrole", fetch=FetchType.EAGER)
+	// bi-directional many-to-one association to User
+	@OneToMany(mappedBy = "userrole")
+	@JsonBackReference
 	private List<User> users;
 
 	public UserRole() {

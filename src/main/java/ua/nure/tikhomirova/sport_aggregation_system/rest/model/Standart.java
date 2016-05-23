@@ -33,17 +33,17 @@ public class Standart implements Serializable {
 	private int value;
 
 	//bi-directional many-to-one association to Sport
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="sportId", nullable=false)
 	private Sport sport;
 
 	//bi-directional many-to-one association to Sportrank
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="sportRank", nullable=false)
 	private Sportrank sportrank;
 
 	//bi-directional many-to-one association to Unit
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="units")
 	private Unit unit;
 

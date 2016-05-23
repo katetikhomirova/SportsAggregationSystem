@@ -24,16 +24,16 @@ public class Team implements Serializable {
 	private String name;
 
 	//bi-directional many-to-one association to Competitor
-	@OneToMany(mappedBy="team", fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="team")
 	private List<Competitor> competitors;
 
 	//bi-directional many-to-one association to UserSport
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="userSport")
 	private UserSport usersport;
 
 	//bi-directional many-to-one association to UserTeam
-	@OneToMany(mappedBy="team", fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="team")
 	private List<UserTeam> userTeams;
 
 	public Team() {

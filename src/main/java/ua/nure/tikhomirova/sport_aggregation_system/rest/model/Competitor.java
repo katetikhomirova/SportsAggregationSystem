@@ -23,17 +23,17 @@ public class Competitor implements Serializable {
 	private int position;
 
 	//bi-directional many-to-one association to SportCompetition
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="sportCompetition")
 	private SportCompetition sportcompetition;
 
 	//bi-directional many-to-one association to Team
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="teamId")
 	private Team team;
 
 	//bi-directional many-to-one association to Result
-	@OneToMany(mappedBy="competitorBean", fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="competitorBean")
 	private List<Result> results;
 
 	public Competitor() {

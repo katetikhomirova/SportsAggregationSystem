@@ -21,6 +21,9 @@ public class Competition implements Serializable {
 	@Column(unique=true, nullable=false)
 	private int id;
 
+	@Column(length=500)
+	private String description;
+
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(nullable=false)
 	private Date endDate;
@@ -32,18 +35,21 @@ public class Competition implements Serializable {
 	@Column(nullable=false)
 	private Date startDate;
 
+	@Column(length=100)
+	private String title;
+
 	//bi-directional many-to-one association to Place
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="placeId")
 	private Place place;
 
 	//bi-directional many-to-one association to Status
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="statusId")
 	private Status status;
 
 	//bi-directional many-to-one association to SportCompetition
-	@OneToMany(mappedBy="competition", fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="competition")
 	private List<SportCompetition> sportcompetitions;
 
 	public Competition() {
@@ -55,6 +61,14 @@ public class Competition implements Serializable {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public String getDescription() {
+		return this.description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	public Date getEndDate() {
@@ -79,6 +93,14 @@ public class Competition implements Serializable {
 
 	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
+	}
+
+	public String getTitle() {
+		return this.title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 	public Place getPlace() {

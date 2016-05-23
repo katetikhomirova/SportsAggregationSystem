@@ -22,17 +22,17 @@ public class Result implements Serializable {
 	private int result;
 
 	//bi-directional many-to-one association to Competitor
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="competitor")
 	private Competitor competitorBean;
 
 	//bi-directional many-to-one association to Stage
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="stage")
 	private Stage stageBean;
 
 	//bi-directional many-to-one association to Unit
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="unit")
 	private Unit unitBean;
 
