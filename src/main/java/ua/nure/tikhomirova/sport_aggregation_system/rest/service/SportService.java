@@ -60,10 +60,10 @@ public class SportService {
 	@POST
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 	public Sport save(@FormParam("name") String name,
-			@FormParam("command") Boolean command,
+			@FormParam("command") String command,
 			@FormParam("categoryName") Integer categoryId) {
 		Sport sport = new Sport();
-		if (command != null && command) {
+		if (command != null && command.equals("on")) {
 			sport.setIsCommand((byte) 1);
 		} else {
 			sport.setIsCommand((byte) 0);

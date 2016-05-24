@@ -6,6 +6,7 @@ import javax.inject.Inject;
 import javax.validation.Valid;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -53,14 +54,23 @@ public class PlaceService {
 	}
 
 	@POST
-	public Place save(@Valid Place place) {
+	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+	public Place save(@FormParam("name") String name,
+			@FormParam("description") String description,
+			@FormParam("lat") Double lat, @FormParam("lng") Double lng,
+			@FormParam("address") String address) {
+		Place place = new Place();
+		place.setName(name);
+		place.setDescription(description);
+		place.setLat(lat);
+		place.setLng(lng);
+		place.setAddress(address);
 		return placeDao.save(place);
 	}
 
 	@PUT
 	@Path("{id}")
-	public Place update(@PathParam("id") Integer id,
-			@Valid Place place) {
+	public Place update(@PathParam("id") Integer id, @Valid Place place) {
 		if (placeDao.findOne(id) == null) {
 			throw new WebApplicationException(Response.Status.NOT_FOUND);
 		} else {
