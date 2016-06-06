@@ -19,6 +19,11 @@ INSERT INTO `sport_aggregation_system`.`sportrank` (`name`) VALUES ('First-Class
 INSERT INTO `sport_aggregation_system`.`sportrank` (`name`) VALUES ('Second-Class Junior Sportsman');
 INSERT INTO `sport_aggregation_system`.`sportrank` (`name`) VALUES ('Third-Class Junior Sportsman');
 
+INSERT INTO `sport_aggregation_system`.`status` (`name`) VALUES ('The highest level (world and continental scale competitions)');
+INSERT INTO `sport_aggregation_system`.`status` (`name`) VALUES ('Level 1 (competitions carried by country sports federation)');
+INSERT INTO `sport_aggregation_system`.`status` (`name`) VALUES ('Level 2 (competitions carried by state sports federations)');
+INSERT INTO `sport_aggregation_system`.`status` (`name`) VALUES ('Level 3 (competitions carried by city or area sports federations)');
+
 
 INSERT INTO `sport_aggregation_system`.`sportcategory` (`name`) VALUES ('run');
 INSERT INTO `sport_aggregation_system`.`sportcategory` (`name`) VALUES ('volleyball');

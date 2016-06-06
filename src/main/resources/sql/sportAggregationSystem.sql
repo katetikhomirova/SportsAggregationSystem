@@ -206,7 +206,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `sport_aggregation_system`.`status` (
   `id` INT(11) NOT NULL AUTO_INCREMENT ,
-  `name` VARCHAR(50) NOT NULL ,
+  `name` VARCHAR(200) NOT NULL ,
   PRIMARY KEY (`id`) )
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;

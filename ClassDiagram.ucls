@@ -1,0 +1,1202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <interface id="1" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.UserRoleDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/UserRoleDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1981" y="686"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="2" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.StandartDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/StandartDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="9628" y="73"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="3" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.SportCompetitionService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/SportCompetitionService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2282" y="407"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="4" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.config" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/config" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1097" y="-39"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <interface id="5" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.UserSportDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/UserSportDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="6134" y="1089"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="6" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.UserRoleService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/UserRoleService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1952" y="347"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.UserService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/UserService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5144" y="203"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.Status" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/Status.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4524" y="522"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.config.JerseyInitialization" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/config/JerseyInitialization.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="957" y="227"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="10" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4054" y="78"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="11" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.AdministrationService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/AdministrationService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="6837" y="667"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.UserSportService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/UserSportService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="6454" y="860"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.Competitor" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/Competitor.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4238" y="1119"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <package id="14" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5434" y="4"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <interface id="15" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.ResultDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/ResultDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="7826" y="905"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="16" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.Standart" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/Standart.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3912" y="1257"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.Administration" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/Administration.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3914" y="809"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.ResultService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/ResultService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="7782" y="726"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.StageService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/StageService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="260" x="6500" y="-171"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="20" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.TeamDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/TeamDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="63" width="244" x="7100" y="382"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="21" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.SportService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/SportService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5426" y="190"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.StatusService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/StatusService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="260" x="6800" y="-171"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="23" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.AdministrationDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/AdministrationDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="6872" y="846"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="24" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.User" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/User.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3526" y="1016"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.UserRole" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/UserRole.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3468" y="1371"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <package id="26" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5398" y="554"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="27" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.config.SqlInitialization" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/config/SqlInitialization.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="978" y="90"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="28" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.CompetitionDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/CompetitionDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="9032" y="53"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="29" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.StageDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/StageDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="63" width="244" x="6500" y="382"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="30" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.SportCompetitionDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/SportCompetitionDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2144" y="906"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="31" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.TeamService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/TeamService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="260" x="7100" y="-171"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.SportrankService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/SportrankService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="260" x="8000" y="-171"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.UserTeamService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/UserTeamService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="260" x="8300" y="-171"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.config.ObjectMapperFactory" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/config/ObjectMapperFactory.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1283" y="208"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.Result" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/Result.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4286" y="1318"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.PlaceService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/PlaceService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="260" x="8600" y="-171"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.CompetitionService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/CompetitionService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="260" x="8900" y="-171"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="38" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.UserSport" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/UserSport.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3401" y="584"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.UserTeam" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/UserTeam.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3576" y="762"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="40" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.SportCategory" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/SportCategory.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4064" y="211"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="41" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.Sportrank" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/Sportrank.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3774" y="1495"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="42" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.Team" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/Team.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3747" y="608"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="43" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.SportCompetition" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/SportCompetition.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4551" y="999"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="44" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.Stage" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/Stage.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4540" y="1490"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="45" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.UserDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/UserDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5144" y="418"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="46" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.Sport" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/Sport.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3630" y="232"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="47" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.Application" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/Application.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1273" y="72"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="48" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.SportCategoryService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/SportCategoryService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5746" y="189"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="49" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.CompetitorService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/CompetitorService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="260" x="9200" y="-171"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="50" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.Unit" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/Unit.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4142" y="1483"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="51" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.UserTeamDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/UserTeamDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="8431" y="91"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="52" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.StatusDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/StatusDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="63" width="244" x="6800" y="382"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="53" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.CompetitorDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/CompetitorDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="9335" y="63"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="54" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.Competition" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/Competition.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4066" y="453"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="55" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.SportDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/SportDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5424" y="411"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="56" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.SportCategoryDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/SportCategoryDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5716" y="417"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="57" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.StandartService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/StandartService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="260" x="9500" y="-171"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="58" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.SportrankDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/SportrankDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="63" width="244" x="8000" y="382"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="59" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.model.Place" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/model/Place.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4402" y="248"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="60" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.service.UnitService" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/service/UnitService.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="260" x="9800" y="-171"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="61" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.PlaceDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/PlaceDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="8726" y="85"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="62" language="java" name="ua.nure.tikhomirova.sport_aggregation_system.rest.dao.UnitDao" 
+    project="SportAggregationSystem" 
+    file="/SportAggregationSystem/src/main/java/ua/nure/tikhomirova/sport_aggregation_system/rest/dao/UnitDao.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="9931" y="63"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <association id="63">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="64" name="userTeams"/>      
+      <multiplicity id="65" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="39" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="66">    
+    <end type="SOURCE" refId="43" navigable="false">      
+      <attribute id="67" name="administrations"/>      
+      <multiplicity id="68" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="69">    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="70" name="userTeams"/>      
+      <multiplicity id="71" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="39" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="72">    
+    <bendpoint x="3681" y="989"/>    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="73" name="competitors"/>      
+      <multiplicity id="74" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="75">    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="76" name="users"/>      
+      <multiplicity id="77" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="78">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="79" name="userrole"/>      
+      <multiplicity id="80" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="81">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="82" name="sportCategoryDao"/>      
+      <multiplicity id="83" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="56" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="84">    
+    <end type="SOURCE" refId="40" navigable="false">      
+      <attribute id="85" name="sports"/>      
+      <multiplicity id="86" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="87">    
+    <end type="SOURCE" refId="39" navigable="false">      
+      <attribute id="88" name="team"/>      
+      <multiplicity id="89" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="42" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="90">    
+    <end type="SOURCE" refId="54" navigable="false">      
+      <attribute id="91" name="sportcompetitions"/>      
+      <multiplicity id="92" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="93">    
+    <end type="SOURCE" refId="54" navigable="false">      
+      <attribute id="94" name="status"/>      
+      <multiplicity id="95" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="96">    
+    <end type="SOURCE" refId="33" navigable="false">      
+      <attribute id="97" name="userTeamDao"/>      
+      <multiplicity id="98" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="99">    
+    <end type="SOURCE" refId="44" navigable="false">      
+      <attribute id="100" name="sportcompetition"/>      
+      <multiplicity id="101" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="102">    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="103" name="stageBean"/>      
+      <multiplicity id="104" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="44" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="105">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="106" name="sportDao"/>      
+      <multiplicity id="107" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="55" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="108">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="109" name="unit"/>      
+      <multiplicity id="110" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="50" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="111">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="112" name="sport"/>      
+      <multiplicity id="113" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="114">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="115" name="userSportDao"/>      
+      <multiplicity id="116" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="117">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="118" name="sportcompetition"/>      
+      <multiplicity id="119" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="120">    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="121" name="usersports"/>      
+      <multiplicity id="122" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="38" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="123">    
+    <end type="SOURCE" refId="39" navigable="false">      
+      <attribute id="124" name="user"/>      
+      <multiplicity id="125" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="126">    
+    <end type="SOURCE" refId="43" navigable="false">      
+      <attribute id="127" name="stages"/>      
+      <multiplicity id="128" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="44" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="129">    
+    <bendpoint x="4056" y="816"/>    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="130" name="sport"/>      
+      <multiplicity id="131" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="132">    
+    <end type="SOURCE" refId="36" navigable="false">      
+      <attribute id="133" name="placeDao"/>      
+      <multiplicity id="134" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="61" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="135">    
+    <bendpoint x="4108" y="804"/>    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="136" name="standarts"/>      
+      <multiplicity id="137" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="138">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="139" name="user"/>      
+      <multiplicity id="140" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="141">    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="142" name="usersport"/>      
+      <multiplicity id="143" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="38" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="144">    
+    <end type="SOURCE" refId="57" navigable="false">      
+      <attribute id="145" name="standartDao"/>      
+      <multiplicity id="146" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="147">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="148" name="statusDao"/>      
+      <multiplicity id="149" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="52" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="150">    
+    <bendpoint x="3996" y="989"/>    
+    <bendpoint x="3724" y="968"/>    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="151" name="team"/>      
+      <multiplicity id="152" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="42" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="153">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="154" name="stageDao"/>      
+      <multiplicity id="155" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="156">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="157" name="administrations"/>      
+      <multiplicity id="158" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="159">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="160" name="sportrank"/>      
+      <multiplicity id="161" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="41" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="162">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="163" name="sportrank"/>      
+      <multiplicity id="164" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="41" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="165">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="166" name="userDao"/>      
+      <multiplicity id="167" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="45" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="168">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="169" name="competitions"/>      
+      <multiplicity id="170" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="54" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="171">    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="172" name="competitorBean"/>      
+      <multiplicity id="173" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="174">    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="175" name="standarts"/>      
+      <multiplicity id="176" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="177">    
+    <end type="SOURCE" refId="43" navigable="false">      
+      <attribute id="178" name="sportBean"/>      
+      <multiplicity id="179" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="180">    
+    <end type="SOURCE" refId="54" navigable="false">      
+      <attribute id="181" name="place"/>      
+      <multiplicity id="182" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="183">    
+    <end type="SOURCE" refId="43" navigable="false">      
+      <attribute id="184" name="competitors"/>      
+      <multiplicity id="185" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="186">    
+    <end type="SOURCE" refId="59" navigable="false">      
+      <attribute id="187" name="competitions"/>      
+      <multiplicity id="188" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="54" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="189">    
+    <end type="SOURCE" refId="60" navigable="false">      
+      <attribute id="190" name="unitDao"/>      
+      <multiplicity id="191" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="62" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="192">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="193" name="teamDao"/>      
+      <multiplicity id="194" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="195">    
+    <end type="SOURCE" refId="50" navigable="false">      
+      <attribute id="196" name="results"/>      
+      <multiplicity id="197" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="35" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="198">    
+    <end type="SOURCE" refId="49" navigable="false">      
+      <attribute id="199" name="competitorDao"/>      
+      <multiplicity id="200" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="53" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="201">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="202" name="user"/>      
+      <multiplicity id="203" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="204">    
+    <end type="SOURCE" refId="32" navigable="false">      
+      <attribute id="205" name="sportrankDao"/>      
+      <multiplicity id="206" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="58" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="207">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="208" name="teams"/>      
+      <multiplicity id="209" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="42" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="210">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="211" name="usersports"/>      
+      <multiplicity id="212" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="38" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="213">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="214" name="sportCompetitionDao"/>      
+      <multiplicity id="215" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="216">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="217" name="sportcompetition"/>      
+      <multiplicity id="218" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="219">    
+    <bendpoint x="5815" y="370"/>    
+    <end type="SOURCE" refId="48" navigable="false">      
+      <attribute id="220" name="sportCategoryDao"/>      
+      <multiplicity id="221" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="56" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="222">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="223" name="results"/>      
+      <multiplicity id="224" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="35" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="225">    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="226" name="unitBean"/>      
+      <multiplicity id="227" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="50" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="228">    
+    <end type="SOURCE" refId="50" navigable="false">      
+      <attribute id="229" name="standarts"/>      
+      <multiplicity id="230" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="231">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="232" name="resultDao"/>      
+      <multiplicity id="233" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="234">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="235" name="userRoleDao"/>      
+      <multiplicity id="236" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="237">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="238" name="administrationDao"/>      
+      <multiplicity id="239" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="240">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="241" name="competitionDao"/>      
+      <multiplicity id="242" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="28" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="243">    
+    <end type="SOURCE" refId="43" navigable="false">      
+      <attribute id="244" name="competition"/>      
+      <multiplicity id="245" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="54" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="246">    
+    <end type="SOURCE" refId="44" navigable="false">      
+      <attribute id="247" name="results"/>      
+      <multiplicity id="248" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="35" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="249">    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="250" name="sportcategory"/>      
+      <multiplicity id="251" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="40" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="252">    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="253" name="sportcompetitions"/>      
+      <multiplicity id="254" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="255">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="256" name="users"/>      
+      <multiplicity id="257" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
